@@ -1,17 +1,34 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="primary">
     <ion-title>
-      Tab 1
+      Call API
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content class="ion-padding" [fullscreen]="true">
+  <ion-item>
+    <!-- <ion-spinner></ion-spinner> -->
+    <ion-spinner color="primary"></ion-spinner>
+    <!-- <ion-spinner color="secondary"></ion-spinner>
+    <ion-spinner color="tertiary"></ion-spinner>
+    <ion-spinner color="success"></ion-spinner>
+    <ion-spinner color="warning"></ion-spinner>
+    <ion-spinner color="danger"></ion-spinner>
+    <ion-spinner color="light"></ion-spinner>
+    <ion-spinner color="medium"></ion-spinner>
+    <ion-spinner color="dark"></ion-spinner> -->
+  </ion-item>
+  <ion-item>
+    <ion-avatar>
+      <img src="../../assets/img/profile.png" alt="">
+    </ion-avatar>
+    <ion-label class="ion-padding">
+      <h1>Title : </h1>
+      <ion-badge>ID :</ion-badge>
+    </ion-label>
+    <ion-button color="success" slot="end">true</ion-button>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  </ion-item>
+
 </ion-content>
